@@ -1,5 +1,7 @@
 # LIBERO-Spatial: BC vs Diffusion Policy under Resource Constraints
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 > An empirical study on when simple Behavioral Cloning beats Diffusion Policy
 > in robot manipulation imitation learning, conducted on a single 8GB laptop GPU.
 
