@@ -1,0 +1,37 @@
+{
+  "model_path": "outputs/model_diffusion_policy.pt",
+  "model_kind": "diffusion",
+  "task_suite": "libero_spatial",
+  "task_id": 0,
+  "task_name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+  "num_episodes": 5,
+  "successes": 1,
+  "success_rate": 0.2,
+  "episodes": [
+    {
+      "init_state_id": 0,
+      "success": false,
+      "steps": 300
+    },
+    {
+      "init_state_id": 1,
+      "success": false,
+      "steps": 300
+    },
+    {
+      "init_state_id": 2,
+      "success": false,
+      "steps": 300
+    },
+    {
+      "init_state_id": 3,
+      "success": false,
+      "steps": 300
+    },
+    {
+      "init_state_id": 4,
+      "success": true,
+      "steps": 136
+    }
+  ]
+}

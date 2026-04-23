@@ -1,0 +1,39 @@
+# --- model checkpoints (too large for GitHub) ---
+*.pt
+*.pth
+*.ckpt
+
+# --- project subtree ---
+libero-bc-vs-dp-study/LIBERO/
+
+# --- raw datasets ---
+libero-bc-vs-dp-study/datasets/
+
+# --- output artifacts ---
+libero-bc-vs-dp-study/outputs/videos/
+libero-bc-vs-dp-study/outputs/diagnostics/
+libero-bc-vs-dp-study/outputs/*.log
+libero-bc-vs-dp-study/outputs/*.mp4
+libero-bc-vs-dp-study/outputs/demo*.gif
+# keep heatmap PNGs and eval JSONs (small, used in README)
+
+# --- internal notes (do not publish) ---
+wendang/
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+*.egg-info/
+
+# --- jupyter ---
+.ipynb_checkpoints/
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
