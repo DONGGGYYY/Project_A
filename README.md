@@ -24,6 +24,18 @@ Three ablations show the **BC vs DP winner depends on observation richness**:
 2. **Adding wrist camera *hurts* MLP** (33% → 21%) despite reducing test MSE by 32% (0.0226 → 0.0154). A textbook example of **action regression loss ≠ task success** in imitation learning.
 3. The "BC vs DP" debate is **setting-dependent**: under low-information observations, simple deterministic regression is more robust; richer observations let DP's multi-modal generation shine.
 
+## Demo GIFs
+
+Representative rollouts from the benchmark. The first row shows MLP, the second row shows DP.
+
+| MLP success | MLP failure |
+|---|---|
+| ![MLP success](libero-bc-vs-dp-study/assets/gifs/mlp_ok.gif) | ![MLP failure](libero-bc-vs-dp-study/assets/gifs/mlp_fail.gif) |
+
+| DP success | DP failure |
+|---|---|
+| ![DP success](libero-bc-vs-dp-study/assets/gifs/dp_ok.gif) | ![DP failure](libero-bc-vs-dp-study/assets/gifs/dp_fail.gif) |
+
 ## Why this is interesting
 
 Most papers compare BC vs DP under *one* setting (the paper's own). This project shows that **the same architectures can flip winners** by changing two knobs (chunk size + camera). Useful when deciding whether to deploy DP in resource-constrained / single-camera robots.

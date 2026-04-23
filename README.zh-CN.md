@@ -24,6 +24,18 @@
 2. **加入 wrist camera 反而会伤害 MLP**（33% -> 21%），即便测试 MSE 下降了 32%（0.0226 -> 0.0154）。这说明模仿学习里常见的现象：**动作回归损失不等于任务成功率**。
 3. BC 与 DP 的优劣并非绝对：观测信息弱时，确定性回归更稳；观测信息更丰富时，DP 的多模态生成优势更容易发挥。
 
+## GIF 展示区
+
+下面是几段代表性的 rollouts，第一行是 MLP，第二行是 DP。
+
+| MLP 成功 | MLP 失败 |
+|---|---|
+| ![MLP 成功](libero-bc-vs-dp-study/assets/gifs/mlp_ok.gif) | ![MLP 失败](libero-bc-vs-dp-study/assets/gifs/mlp_fail.gif) |
+
+| DP 成功 | DP 失败 |
+|---|---|
+| ![DP 成功](libero-bc-vs-dp-study/assets/gifs/dp_ok.gif) | ![DP 失败](libero-bc-vs-dp-study/assets/gifs/dp_fail.gif) |
+
 ## 为什么这个项目有意义
 
 很多论文只在单一设定下比较 BC 与 DP。本项目显示：仅改变两个因素（`chunk_steps` 和相机视角），
